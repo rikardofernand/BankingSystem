@@ -7,8 +7,8 @@ class Savings :
 public:
     Savings(const std::string& name, float balance, float rate);
     ~Savings();
-    float getInterestRate()const;
-    void accumulateInterest();
+    float getInterestRate()const override;
+    void accumulateInterest() override;
 
 };
 

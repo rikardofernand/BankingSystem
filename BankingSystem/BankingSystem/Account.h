@@ -10,15 +10,15 @@ protected:
 	float m_Balance;
 public:
 	Account(const std::string& name, float balance );
-	~Account();
+	virtual ~Account();
 	const std::string getName()const;
 	float getBalance()const;
 	int getAccountN()const;
 
-	void accumulateInterest();
-	void withDraw(float amount);
+	virtual void accumulateInterest();
+	virtual void withDraw(float amount);
 	void deposit(float amount);
-	float getInterestRate()const;
+	virtual float getInterestRate()const;
 
 };
 

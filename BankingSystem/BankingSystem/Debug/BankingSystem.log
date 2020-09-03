@@ -1,2 +1,5 @@
-﻿  main.cpp
+﻿  Savings.cpp
+  main.cpp
+C:\Users\rmfer\ricDocs\Learncpp\BankingProjec\BankingSystem\BankingSystem\main.cpp(9,31): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
   BankingSystem.vcxproj -> C:\Users\rmfer\ricDocs\Learncpp\BankingProjec\BankingSystem\Debug\BankingSystem.exe
