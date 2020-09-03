@@ -1,9 +1,10 @@
 #include "Checking.h"
 #include <iostream>
 
-//Checking::Checking(const std::string& name, float balance) :Account(name,balance)
-//{
-//}
+
+Checking::Checking(const std::string& name, float balance, float minBalance): minimumBalance(minBalance), Account(name,balance)
+{
+}
 
 Checking::~Checking()
 {
@@ -11,8 +12,14 @@ Checking::~Checking()
 
 void Checking::withDraw(float amount)
 {
-	if ((m_Balance - amount) > 50)
+	if ((m_Balance - amount) > minimumBalance)
 		Account::withDraw(amount);
 	else
-		std::cout << "Balance cannot be bellow 50"<<std::endl;
+		std::cout << "Invalid amount"<<std::endl;
 }
+
+float Checking::getMinimumBalance() const
+{
+	return minimumBalance;
+}
+
